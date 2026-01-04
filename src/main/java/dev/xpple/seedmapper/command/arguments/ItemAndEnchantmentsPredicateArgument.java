@@ -230,7 +230,7 @@ public class ItemAndEnchantmentsPredicateArgument implements ArgumentType<ItemAn
                             return with;
                         }
                         int itemEnchantmentLevel = EnchantInstance.level(enchantInstance);
-                        return with == itemEnchantmentLevel == enchantmentLevel;
+                        return with == (itemEnchantmentLevel == enchantmentLevel);
                     }
                     return !with;
                 });
